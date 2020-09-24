@@ -48,6 +48,9 @@ mongo_data:
 ```
 ### `multiple()`
 
+The multiple method uses a Python generator function so it can handle very large
+Mongo collections.
+
 Here we are setting the `id_key` to `_id`
 
 ```python
