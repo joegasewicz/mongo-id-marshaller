@@ -1,3 +1,5 @@
+![PyPI](https://img.shields.io/pypi/v/mongo-id-marshaller)
+
 # Mongo ID Marshaller
 A small library that marshals Mongo ObjectIds
 
