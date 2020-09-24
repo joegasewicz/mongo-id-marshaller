@@ -43,7 +43,7 @@ mongo_data:
     "town" : "London",
 }
 """
-
+```
 ### `multiple()`
 
 Here we are setting the `id_key` to `_id`
