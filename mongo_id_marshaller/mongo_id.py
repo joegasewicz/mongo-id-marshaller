@@ -1,4 +1,9 @@
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Generator
+
+
+def _doc_generator(mongo_docs: List[Dict[str, Any]]) -> Generator:
+    for doc in mongo_docs:
+        yield doc
 
 
 class MongoId:
@@ -23,6 +28,6 @@ class MongoId:
         :return:
         """
         cleaned_list = []
-        for query_data in query_list:
+        for query_data in _doc_generator(query_list):
             cleaned_list.append(self.single(query_data))
         return cleaned_list
